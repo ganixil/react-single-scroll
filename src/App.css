@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+/* setting */
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* override the body  styling to remove default margin */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #d1d5db;
+  color: #1f2937;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Page styling, apply to all pages */
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: #f3f4f6;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  min-width: 90vw;
+  min-height: 100vh;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Back to top button styling */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 999px;
+  background: #6b7280;
   color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.back-to-top:hover {
+  background: #4b5563;
 }
