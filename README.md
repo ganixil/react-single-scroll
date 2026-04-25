@@ -4,12 +4,14 @@ This project is a simple React single-page application that uses **react-router-
 
 ## Install dependencies
 ```bash
-npm install react-router-dom
+npm install
 ```
 
-
-
----
+### Note
+```bash
+npm install react-router-dom
+```
+this will be required for react-router-dom
 
 # Running the App
 
@@ -25,23 +27,6 @@ Then open:
 http://localhost:3000
 ```
 
-
----
-
-# Build for Production
-
-```bash
-npm run build
-```
-
-Output will be in:
-
-```text
-/build
-```
-
-
----
 
 # 📌 Notes
 
